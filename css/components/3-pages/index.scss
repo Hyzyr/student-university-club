@@ -122,6 +122,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 220px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     &:nth-of-type(2) {
       .introItem__shape {
         left: unset;
@@ -251,6 +254,7 @@
 // 650px
 @mixin intro-sm-md-extra {
   .intro {
+    padding: 50px 0;
     &__inner {
       h2 {
         margin-bottom: 30px;
@@ -273,6 +277,7 @@
 // 540px
 @mixin intro-xsm-sm {
   .intro {
+    padding: 40px 0;
     &Item {
       flex-wrap: wrap;
       &:nth-of-type(2) {
@@ -306,7 +311,7 @@
 // SPONSORS
 .sponsors {
   &__inner {
-    padding-bottom: 142px;
+    padding: 140px 0;
     h2 {
       margin-bottom: 30px;
       text-align: center;
@@ -342,7 +347,15 @@
     }
   }
 }
-// 920px
+// 1180px
+@mixin sponsors-xlg-xxlg {
+    .sponsors {
+      &__inner {
+        padding: 110px 0;
+      }
+    }
+  }
+// 930px
 @mixin sponsors-md-lg {
   .sponsors {
     &__inner {
@@ -362,7 +375,7 @@
 @mixin sponsors-xsm-sm {
   .sponsors {
     &__inner {
-      padding: 40px 0;
+      padding: 50px 0;
       &-row {
         &-link {
           width: calc(33.3% - 30px);
@@ -376,6 +389,7 @@
 @mixin sponsors-xxsm-xsm {
   .sponsors {
     &__inner {
+        padding: 35px 0;
       &-row {
         &-link {
           width: calc(50% - 20px);
@@ -611,18 +625,17 @@
 @mixin club-sm-md-extra {
   .club {
     &__inner {
-      padding: 90px 0;
+      padding: 70px 0;
       &-row {
         padding: 25px 50px 28px 42px;
-        h3 {
-        }
+
         &-bg {
           &-image {
             top: -40px;
             max-width: 90px;
             &:nth-child(2) {
               right: -25px;
-              max-width: 130px;
+              max-width: 100px;
               bottom: -10px;
             }
           }
@@ -635,9 +648,9 @@
 @mixin club-xsm-sm{
   .club {
     &__inner {
-      padding: 90px 0;
+      padding: 50px 0;
       &-row {
-        padding: 25px 30px 28px 32px;
+        padding: 25px 50px 28px 32px;
         h3 {
           width: 60%;
         }
@@ -650,7 +663,7 @@
 @mixin club-xxsm-xsm{
   .club {
     &__inner {
-      padding: 70px 0;
+      padding: 50px 0 40px;
       &-row {
         padding: 25px 20px 28px 22px;
         flex-direction: column;

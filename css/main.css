@@ -33,7 +33,7 @@ input::-webkit-inner-spin-button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #323234;
+  background: #dddddd;
 }
 
 /* Handle */
@@ -455,6 +455,9 @@ main {
           align-items: center;
   margin-bottom: 220px;
 }
+.introItem:last-child {
+  margin-bottom: 0;
+}
 .introItem:nth-of-type(2) .introItem__shape {
   left: unset;
   right: -10%;
@@ -514,7 +517,7 @@ main {
 }
 
 .sponsors__inner {
-  padding-bottom: 142px;
+  padding: 140px 0;
 }
 .sponsors__inner h2 {
   margin-bottom: 30px;
@@ -778,6 +781,10 @@ main {
   }
   .introItem__image > img {
     max-width: 370px;
+  }
+
+  .sponsors__inner {
+    padding: 110px 0;
   }
 }
 @media (max-width: 1024px) {
@@ -1071,7 +1078,7 @@ main {
   .button.rounded {
     font-size: 17px;
     line-height: 23px;
-    padding: 10px 40px;
+    padding: 10px 40px 12px;
   }
   .button.rounded span {
     margin-left: 10px;
@@ -1107,6 +1114,9 @@ main {
     width: 140px;
   }
 
+  .intro {
+    padding: 50px 0;
+  }
   .intro__inner h2 {
     margin-bottom: 30px;
   }
@@ -1160,7 +1170,7 @@ main {
   }
 
   .club__inner {
-    padding: 90px 0;
+    padding: 70px 0;
   }
   .club__inner-row {
     padding: 25px 50px 28px 42px;
@@ -1171,7 +1181,7 @@ main {
   }
   .club__inner-row-bg-image:nth-child(2) {
     right: -25px;
-    max-width: 130px;
+    max-width: 100px;
     bottom: -10px;
   }
 }
@@ -1185,7 +1195,7 @@ main {
     line-height: 16px;
   }
   .button.rounded {
-    padding: 8px 30px;
+    padding: 8px 30px 10px;
     -webkit-box-shadow: 0px 5px 20px 0px #498794;
             box-shadow: 0px 5px 20px 0px #498794;
   }
@@ -1197,6 +1207,9 @@ main {
     margin-bottom: 20px;
   }
 
+  .intro {
+    padding: 40px 0;
+  }
   .introItem {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1226,7 +1239,7 @@ main {
   }
 
   .sponsors__inner {
-    padding: 40px 0;
+    padding: 50px 0;
   }
   .sponsors__inner-row-link {
     width: calc(33.3% - 30px);
@@ -1279,10 +1292,10 @@ main {
   }
 
   .club__inner {
-    padding: 90px 0;
+    padding: 50px 0;
   }
   .club__inner-row {
-    padding: 25px 30px 28px 32px;
+    padding: 25px 50px 28px 32px;
   }
   .club__inner-row h3 {
     width: 60%;
@@ -1303,6 +1316,9 @@ main {
     width: 120px;
   }
 
+  .sponsors__inner {
+    padding: 35px 0;
+  }
   .sponsors__inner-row-link {
     width: calc(50% - 20px);
     margin-bottom: 30px;
@@ -1334,7 +1350,7 @@ main {
   }
 
   .club__inner {
-    padding: 70px 0;
+    padding: 50px 0 40px;
   }
   .club__inner-row {
     padding: 25px 20px 28px 22px;
