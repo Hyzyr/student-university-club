@@ -1,4 +1,80 @@
-
+.hero {
+    padding: 165px 0 80px;
+    position: relative;
+    background-color: $main-light;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    &__inner {
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+        .button {
+            width: 100%;
+            max-width: 255px;
+            margin: 0 auto;
+        }
+        &-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// 1380px
+@mixin hero-xxxlg-xxxxlg {
+}
+// 1250px
+@mixin hero-xlg-xxlg-extra {
+  .hero {
+  }
+}
+// 1180px
+@mixin hero-xlg-xxlg {
+  .hero {
+  }
+}
+// 1024px
+@mixin hero-lg-xlg {
+  .hero {
+  }
+}
+// 930px
+@mixin hero-md-lg {
+  .hero {
+  }
+}
+// 750px
+@mixin hero-sm-md {
+  .hero {
+  }
+}
+// 540px
+@mixin hero-xsm-sm {
+  .hero {
+  }
+}
 // SPONSORS
 .sponsors {
   &__inner {
@@ -60,6 +136,58 @@
                 border-radius: 20px;
             }
 
+        }
+    }
+}
+.intro {
+    padding: 90px 0 90px;
+    &__inner {
+        h2 {
+            text-align: center;
+            margin-bottom: 90px;
+        }
+    
+    }
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 220px;
+        &:nth-of-type(2) {
+            .introItem__shape {
+                left: unset;
+                right: 25%;
+            }
+        }
+        &__content {
+            width: calc(45% - 30px);
+            max-width: 448px;
+        }
+        &__image {
+            width: calc(55% - 30px);
+            max-width: 554px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+        }
+        &__shape {
+            position: absolute;
+            left: 0;
+            bottom: -20%;
+            width: 200%;
+            height: 160%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // pointer-events: none;
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+        }
+        h4 {
+            margin-bottom: 20px;
         }
     }
 }
