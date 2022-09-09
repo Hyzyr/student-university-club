@@ -24,12 +24,38 @@
 // 1024px
 @mixin header-lg-xlg {
     .header {
-    
+        padding: 16px 0;
+        &__inner {
+            &-logo {
+                width: 170px;
+            }
+        }
+    }
+}
+// 650px
+@mixin header-sm-md-extra {
+    .header {
+        &__inner {
+            &-logo {
+                width: 140px;
+            }
+
+        }
     }
 }
 // 540px
 @mixin header-xsm-sm {
     .header {
 
+    }
+}
+// 440px
+@mixin header-xxsm-xsm {
+    .header {
+        &__inner {
+            &-logo {
+                width: 120px;
+            }
+        }
     }
 }
