@@ -384,6 +384,56 @@
     }
   }
 }
+// 920px
+@mixin sponsors-md-lg{
+  .sponsors{
+    &__inner{
+      padding: 70px 0;
+      &-row{
+        flex-wrap: wrap;
+        margin-bottom: unset;
+        &-link{
+          width: calc(33.3% - 40px);
+          margin-bottom: 30px;
+          
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin sponsors-xsm-sm{
+  .sponsors{
+    &__inner{
+      padding: 40px 0;
+      &-row{
+        &-link{
+          width: calc(33.3% - 30px);
+          margin-bottom: 30px;
+          
+        }
+      }
+    }
+  }
+
+}
+// 440px
+@mixin sponsors-xxsm-xsm{
+  .sponsors{
+    &__inner{
+      &-row{
+        &-link{
+          width: calc(50% - 20px);
+          margin-bottom: 30px;
+          
+        }
+      }
+    }
+  }
+
+}
+
+
 // products
 .product {
   background-image: url("../images/product/productBg.png");
@@ -499,3 +549,4 @@
     }
   }
 }
+
