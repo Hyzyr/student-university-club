@@ -38,7 +38,58 @@
       align-items: center;
       img {
         width: 100%;
+<<<<<<< HEAD
       }
+=======
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__leaves {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 16%;
+        bottom: 50%;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__inner {
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+        .button {
+            width: 100%;
+            max-width: 255px;
+            margin: 0 auto;
+        }
+        &-image {
+            margin: -13% 0 0 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     
+            img {
+                width: 100%;
+            }
+        }
+>>>>>>> 2f0e068bc15c298e61894efca40a5bdced68afb9
     }
   }
 }
@@ -74,6 +125,65 @@
 @mixin hero-xsm-sm {
   .hero {
   }
+}
+.intro {
+    padding: 90px 0 90px;
+    &__inner {
+        h2 {
+            text-align: center;
+            margin-bottom: 90px;
+        }
+    
+    }
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 220px;
+        &:nth-of-type(2) {
+            .introItem__shape {
+                left: unset;
+                right: 25%;
+                bottom: -10%;
+            }
+        }
+        &__content {
+            width: calc(45% - 30px);
+            max-width: 448px;
+        }
+        &__image {
+            width: calc(55% - 30px);
+            max-width: 554px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            img {
+                width: 100%;
+            }
+        }
+        &__shape {
+            position: absolute;
+            left: 0;
+            bottom: -20%;
+            width: 200%;
+            height: 160%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            z-index: -1;
+            img {
+                width: 100%;
+                height: 100%;
+                max-height: 640px;
+                object-fit: contain;
+            }
+        }
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
 }
 // SPONSORS
 .sponsors {
