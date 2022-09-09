@@ -42,6 +42,7 @@ main {
     overflow: hidden;
 }
 .button {
+    font-family: $eina;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -81,12 +82,3 @@ main {
     }
 }
 
-
-@font-face {
-    font-family: 'eina';
-    src: url('WestTrial-MediumWeb.woff2') format('woff2'),
-        url('WestTrial-MediumWeb.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
