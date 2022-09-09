@@ -181,6 +181,13 @@ main {
      object-fit: cover;
 }
 
+@font-face {
+  font-family: "eina";
+  src: url("WestTrial-MediumWeb.woff2") format("woff2"), url("WestTrial-MediumWeb.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .header {
   position: absolute;
   top: 0;
