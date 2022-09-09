@@ -44,7 +44,7 @@
             padding: 20px 66px;
         }
     }
-    @include intro-xlg-xxlg-extra;
+    // @include intro-xlg-xxlg-extra;
 
 }
 // 1180px
@@ -161,6 +161,8 @@
     @include hero-md-lg;
     @include intro-md-lg;
     @include sponsors-md-lg;
+    @include product-md-lg;
+
 
 
 

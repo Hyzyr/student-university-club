@@ -42,40 +42,44 @@ main {
     overflow: hidden;
 }
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 14px 22px;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 500;
-  cursor: pointer;
-  background-color: $white;
-  color: $primary;
-  position: relative;
-  box-sizing: border-box;
-  &.rounded {
-    border-radius: 43px;
-    padding: 25px 80px;
-    font-size: 24px;
-    line-height: 28px;
-    span {
-      margin-left: 14px;
-    }
-  }
-  span {
-    display: flex;
+    font-family: $eina;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 11px;
-    height: 12px;
-    margin-left: 10px;
+    border-radius: 10px;
+    padding: 14px 22px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: $white;
+    color: $primary;
+    position: relative;
+    box-sizing: border-box;
+    &.rounded {
+        border-radius: 43px;
+        padding: 25px 90px;
+        font-size: 24px;
+        line-height: 28px;
+        box-shadow: 0px 12px 40px 0px $main;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      span {
+        margin-left: 14px;
+      }
     }
-  }
+    span {
+        margin-top: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 11px;
+        height: 12px;
+        margin-left: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
+
