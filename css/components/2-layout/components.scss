@@ -1,50 +1,45 @@
 h1 {
-  font-weight: 600;
-  font-size: 93px;
-  line-height: 110px;
+    font-weight: 600;
+    font-size: 93px;
+    line-height: 110px;
 }
 
 h2 {
-  font-size: 46px;
-  line-height: 77px;
+    font-size: 46px;
+    line-height: 77px;
 }
 
 h3 {
-  font-size: 36px;
-  line-height: 51px;
-  font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 700;
 }
 
 h4 {
-  font-size: 32px;
-  line-height: 53px;
-  font-weight: 600;
-  color: $main;
+    font-size: 32px;
+    line-height: 53px;
+    font-weight: 600;
+    color: $main;
 }
 
 h5 {
-  font-size: 24px;
-  line-height: 40px;
-  font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
 }
 
 h6 {
-  font-size: 22px;
-  line-height: 28px;
+    font-size: 22px;
+    line-height: 28px;
 }
 p {
-  &.big {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  &.sm {
-    font-size: 16px;
-    line-height: 26px;
-    color: $black;
-  }
+    &.big {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 main {
-  overflow: hidden;
+    overflow: hidden;
 }
 .button {
   display: flex;
