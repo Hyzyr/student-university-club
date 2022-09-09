@@ -1,146 +1,23 @@
 .footer {
-    padding: 65px 0;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-copy {
-            color: #9C9EB4;
-            font-size: 13px;
-            line-height: 15px;
-            font-weight: 300;
-        }
-        &-contact {
-            display: flex;
-            align-items: center;
-        }
-        &-call {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            line-height: 28px;
-            margin-right: 80px;
-            span {
-                width: 24px;
-                height: 24px;
-                margin-right: 20px;
-                color: #EBE1FF;
-                img {
-                    width: 100%;
-                }
-            }
-        }
-        &-social {
-            display: flex;
-            align-items: center;
-            a {
-                width: 43px;
-                height: 43px;
-                background: rgba($blue, .17);
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 12px;
-                transition: .3s ease;
-                &:hover {
-                    background-color: #EBE1FF;
-                    svg {
-                        fill: #7331FF;
-                    }
-                }
-                &:last-child {
-                    margin-right: 0;
-                }
-                svg {
-                    width: 18px;
-                    height: 14px;
-                    fill: $blue;
-                    transition: .3s ease;
-                }
-            }   
-        }
-    }
+    
+
 }
 // 750px
 @mixin footer-sm-md  {
     .footer {
-        padding: 54px 0;
-        &__inner {
-            &-call {
-                margin-right: 40px;
-            }
-            &-social {
-                a {
-                    margin-right: 10px;
-                }
-            }
-        }
+       
     }
 }
 // 650px
 @mixin footer-sm-md-extra  {
     .footer {
-        &__inner {
-            &-call {
-                margin-right: 20px;
-                font-size: 13px;
-                line-height: 25px;
-                span {
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 10px;
-                }
-            }
-            &-social {
-                a {
-                    margin-right: 6px;
-                }
-            }
-        }
+       
     }
 }
 // 540px
 @mixin footer-xsm-sm  {
     .footer {
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-            &-call {
-                display: none;
-            }
-            &-contact {
-                margin-bottom: 24px;
-                order: -1;
-            }
-            &-social {
-
-                a {
-                    position: relative;
-                    background-color: transparent;
-                    width: 78px;
-                    height: 50px;
-                    margin-right: 10px;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        background-color: $white;
-                        transform: skewX(-8deg);
-                        z-index: -1;
-                        border-radius: 8px;
-                    }
-                    svg {
-                        width: 28px;
-                        height: 24px;
-                        fill: $primary;
-                    }
-                }
-            }
-        }
+  
     }
 }
 // 390px

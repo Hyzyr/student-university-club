@@ -9,7 +9,6 @@ html, body {
     padding: 0;
     border: none;
     outline: none;
-    box-sizing: border-box;
 }
 button {
   outline: none;
@@ -37,13 +36,13 @@ input::-webkit-inner-spin-button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($color: #AE29FF, $alpha: 0.7);
+  background: rgba($color: #000, $alpha: 0.2);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($color: #AE29FF, $alpha: 0.5);
+  background: rgba($color: #000, $alpha: 0.3);
 }
 /*** 
 ====================================================================

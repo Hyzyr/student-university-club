@@ -1,5 +1,5 @@
 h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 120px;
     line-height: 144px;
     text-transform: uppercase;
@@ -147,85 +147,3 @@ main {
     }
 }
 
-@keyframes ball {
-    52% {
-        transform:translateX(-50px) scale(1) rotate(0);
-    }
-    56% {
-        transform:translateX(-300px) scale(1) rotate(360deg);
-    }
-    59% {
-        transform:translateX(-90px) scale(1.3) rotate(0);
-    }
-    63% {
-        transform:translateX(-300px) scale(1) rotate(360deg);
-    }
-    65% {
-        transform:translateX(-90px) scale(1) rotate(0);
-    }
-    70% {
-        transform:translateX(-300px) scale(1) rotate(360deg);
-        opacity: 1;
-    }
-    76% {
-        transform:translateX(-550px) scale(1) rotate(360deg);
-        opacity: 0;
-    }
-  }
-@keyframes buttonBefore {
-    0% {
-        opacity: .5;
-        transform: translate(-50%, -50%) scale(.8);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-}
-@keyframes buttonAfter {
-    0% {
-        opacity: .15;
-        transform: translate(-50%, -50%) scale(.8);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1.3);
-    }
-}
-@keyframes loop {
-    0% {
-        transform: translate(-50%, -50%) rotate(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(350deg);
-    }
-}
-@keyframes bucklet {
-    0% {
-        transform: translate(-40%, -70%) rotate(30deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0);
-    }
-}
-@keyframes bucklet2 {
-    0% {
-        transform: translate(-60%, -40%) rotate(-20deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0);
-    }
-}
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 2%, 0);
-        transform: translate3d(0, 2%, 0);
-      }
-    
-      to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-}
