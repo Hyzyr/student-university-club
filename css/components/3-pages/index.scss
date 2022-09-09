@@ -1,47 +1,86 @@
 .hero {
-    
 }
 // 1380px
 @mixin hero-xxxlg-xxxxlg {
-
 }
 // 1250px
 @mixin hero-xlg-xxlg-extra {
-    .hero {
-
-    }
+  .hero {
+  }
 }
 // 1180px
 @mixin hero-xlg-xxlg {
-    .hero {
-
-    }
+  .hero {
+  }
 }
 // 1024px
 @mixin hero-lg-xlg {
-    .hero {
-
-    }
+  .hero {
+  }
 }
 // 930px
 @mixin hero-md-lg {
-    .hero {
-  
-    }
+  .hero {
+  }
 }
 // 750px
 @mixin hero-sm-md {
-    .hero {
- 
-    }
+  .hero {
+  }
 }
 // 540px
 @mixin hero-xsm-sm {
-    .hero {
-
-    }
+  .hero {
+  }
 }
 // SPONSORS
-.sponsors{
-    
+.sponsors {
+  &__inner {
+      padding-bottom: 142px;
+    h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      &:last-child{
+          margin: unset;
+      }
+      &-link {
+        width: calc(16.6% - 24px);
+        &-image {
+          padding-bottom: 34.5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            @include transform;
+          }
+        }
+      }
+    }
+  }
+}
+.product{
+    &__inner{
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }

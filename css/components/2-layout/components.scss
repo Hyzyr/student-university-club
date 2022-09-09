@@ -5,9 +5,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
-
 h2 {
-  font-family: "Work Sans";
   font-weight: 600;
   font-size: 46px;
   line-height: 77px;
@@ -45,14 +43,10 @@ h4 {
 }
 
 h5 {
-  font-size: 25px;
-  line-height: 34px;
   font-weight: 600;
-  &.linear {
-    background: linear-gradient(96.1deg, #9327ff 4.83%, #00b6e9 87.78%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  font-size: 24px;
+  line-height: 40px;
+  color: $blue;
 }
 
 h6 {
