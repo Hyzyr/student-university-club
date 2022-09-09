@@ -162,10 +162,7 @@
     @include intro-md-lg;
     @include sponsors-md-lg;
     @include product-md-lg;
-
-
-
-
+    @include footer-md-lg;
 }
 // 750px
 @include sm-md {
@@ -203,6 +200,7 @@
         }
     }
     @include hero-sm-md;
+    @include footer-sm-md;
 
 
 }
@@ -251,6 +249,7 @@
     @include nav-sm-md-extra;
     @include header-sm-md-extra;
     @include intro-sm-md-extra;
+    @include footer-sm-md-extra;
 
 }
 // 540px
@@ -259,15 +258,17 @@
         padding: 0 15px;
     }
     .button {
+        font-size: 12px;
+        line-height: 16px;
         &.rounded {
             padding: 8px 30px;
             box-shadow: 0px 5px 20px 0px $main;
-
         }
     }
     @include hero-xsm-sm;
     @include intro-xsm-sm;
     @include sponsors-xsm-sm;
+    @include footer-xsm-sm;
 
 
 
@@ -278,6 +279,7 @@
     @include nav-xxsm-xsm;
     @include header-xxsm-xsm;
     @include sponsors-xxsm-xsm;
+    @include footer-xxsm-xsm;
 
 
 

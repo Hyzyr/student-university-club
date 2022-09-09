@@ -56,6 +56,10 @@ main {
     color: $primary;
     position: relative;
     box-sizing: border-box;
+    &.primary {
+        background-color: $primary;
+        color: $white;
+    }
     &.rounded {
         border-radius: 43px;
         padding: 25px 90px;
