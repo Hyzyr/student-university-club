@@ -117,14 +117,80 @@
 }
 // 930px
 @include md-lg {
-
+    h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    
+    h4 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 253px;
+    }
+    p {
+        &.big {
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
     // @include intro-md-lg;
 
 
 }
 // 750px
 @include sm-md {
-
+    h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    
+    h4 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 253px;
+    }
+    p {
+        &.big {
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
     // @include hero-sm-md;
 
 
