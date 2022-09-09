@@ -162,9 +162,7 @@
     @include intro-md-lg;
     @include sponsors-md-lg;
     @include product-md-lg;
-
-
-
+    @include club-md-lg;
 
 }
 // 750px
@@ -203,6 +201,8 @@
         }
     }
     @include hero-sm-md;
+    @include product-sm-md;
+    @include club-sm-md;
 
 
 }
@@ -251,7 +251,8 @@
     @include nav-sm-md-extra;
     @include header-sm-md-extra;
     @include intro-sm-md-extra;
-
+    @include product-sm-md-extra;
+    @include club-sm-md-extra;
 }
 // 540px
 @include xsm-sm  {
@@ -268,8 +269,8 @@
     @include hero-xsm-sm;
     @include intro-xsm-sm;
     @include sponsors-xsm-sm;
-
-
+    @include product-xsm-sm;
+    @include club-xsm-sm;
 
 }
 // 440px
@@ -278,8 +279,7 @@
     @include nav-xxsm-xsm;
     @include header-xxsm-xsm;
     @include sponsors-xxsm-xsm;
-
-
+    @include club-xxsm-xsm;
 
 }
 // 390px
