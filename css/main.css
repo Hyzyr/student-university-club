@@ -79,6 +79,10 @@ a:hover {
   padding: 0 40px;
 }
 
+.main {
+  overflow: hidden;
+}
+
 h1 {
   font-weight: 600;
   font-size: 93px;
@@ -142,6 +146,11 @@ main {
   background-color: #fff;
   color: #42AAAB;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.button.rounded {
+  border-radius: 43px;
 }
 .button span {
   display: -webkit-box;
@@ -321,6 +330,80 @@ main {
 }
 .hero__inner-image img {
   width: 100%;
+}
+
+.sponsors__inner {
+  padding-bottom: 142px;
+}
+.sponsors__inner h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sponsors__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.sponsors__inner-row:last-child {
+  margin: unset;
+}
+.sponsors__inner-row-link {
+  width: calc(16.6% - 24px);
+}
+.sponsors__inner-row-link-image {
+  padding-bottom: 34.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.sponsors__inner-row-link-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translate(-50%, -50%);
+  -moz-ransform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.product__inner h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product__inner-row .productItem {
+  padding: 54px 43px 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .intro {

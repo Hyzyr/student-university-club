@@ -29,9 +29,6 @@ input::-webkit-inner-spin-button {
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgb(50, 50, 52);
-  ;
-  
-  ;
 }
 
 /* Handle */
@@ -72,6 +69,9 @@ a {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 40px;
+}
+.main{
+  overflow: hidden;
 }
 
 

@@ -54,6 +54,10 @@ main {
     background-color: $white;
     color: $primary;
     position: relative;
+    box-sizing: border-box;
+    &.rounded {
+      border-radius: 43px;
+    }
     span {
         display: flex;
         justify-content: center;
