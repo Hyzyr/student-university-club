@@ -574,7 +574,7 @@ main {
   background-position: center;
 }
 .product__inner {
-  padding: 60px 0 104px;
+  padding: 45px 0 95px;
   max-width: 920px;
   margin: 0 auto;
 }
@@ -590,10 +590,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
-}
-.product__inner-row:last-child {
-  margin-bottom: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .product__inner-row .productItem {
   padding: 54px 43px 65px;
@@ -604,6 +602,7 @@ main {
   background-color: #fff;
   border-radius: 20px;
   text-align: center;
+  margin: 15px 0;
 }
 .product__inner-row .productItem h5 {
   color: #498794;
@@ -629,12 +628,18 @@ main {
 }
 .product__inner-row .productItem__image img {
   width: 100%;
+  max-width: 265px;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -moz-ransform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 .club__inner {
@@ -656,7 +661,7 @@ main {
   position: relative;
 }
 .club__inner-row h3 {
-  max-width: 400px;
+  width: 50%;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -668,6 +673,7 @@ main {
   font-size: 24px;
   line-height: 28px;
   border-radius: 43px;
+  font-family: "eina";
 }
 .club__inner-row-bg {
   position: absolute;
@@ -932,6 +938,17 @@ main {
     margin-bottom: 30px;
   }
 
+  .product__inner {
+    padding: 45px 0;
+  }
+  .product__inner-row .productItem {
+    padding: 44px 33px 55px;
+    width: calc(50% - 10px);
+  }
+  .product__inner-row .productItem__image {
+    margin-bottom: 30px;
+  }
+
   .footer__inner {
     padding: 35px 0;
   }
@@ -942,6 +959,21 @@ main {
     width: 26px;
     height: 22px;
     margin-right: 35px;
+  }
+
+  .club__inner {
+    padding: 100px 0;
+  }
+  .club__inner-row {
+    padding: 45px 90px 48px 72px;
+  }
+  .club__inner-row-bg-image {
+    top: -40px;
+    max-width: 110px;
+  }
+  .club__inner-row-bg-image:nth-child(2) {
+    right: -35px;
+    max-width: 150px;
   }
 }
 @media (max-width: 750px) {
@@ -1008,6 +1040,20 @@ main {
   }
   .footer__inner-row-social span {
     margin-right: 25px;
+  }
+
+  .product__inner-row .productItem {
+    padding: 30px 23px 40px;
+  }
+  .product__inner-row .productItem__image {
+    margin-bottom: 20px;
+  }
+
+  .club__inner {
+    padding: 100px 0;
+  }
+  .club__inner-row {
+    padding: 35px 70px 38px 62px;
   }
 }
 @media (max-width: 650px) {
@@ -1102,6 +1148,32 @@ main {
     height: 18px;
     margin-right: 20px;
   }
+
+  .product__inner h2 {
+    margin-bottom: 20px;
+  }
+  .product__inner-row .productItem {
+    padding: 24px 13px 35px;
+  }
+  .product__inner-row .productItem p {
+    font-size: 13px;
+  }
+
+  .club__inner {
+    padding: 90px 0;
+  }
+  .club__inner-row {
+    padding: 25px 50px 28px 42px;
+  }
+  .club__inner-row-bg-image {
+    top: -40px;
+    max-width: 90px;
+  }
+  .club__inner-row-bg-image:nth-child(2) {
+    right: -25px;
+    max-width: 130px;
+    bottom: -10px;
+  }
 }
 @media (max-width: 540px) {
   .auto__container {
@@ -1188,6 +1260,33 @@ main {
     height: 15px;
     margin-right: 16px;
   }
+
+  .product__inner-row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product__inner-row .productItem {
+    width: 100%;
+    padding: 24px 13px 35px;
+    max-width: 400px;
+  }
+  .product__inner-row .productItem p {
+    font-size: 13px;
+  }
+
+  .club__inner {
+    padding: 90px 0;
+  }
+  .club__inner-row {
+    padding: 25px 30px 28px 32px;
+  }
+  .club__inner-row h3 {
+    width: 60%;
+  }
 }
 @media (max-width: 440px) {
   .nav__inner-links a {
@@ -1232,5 +1331,25 @@ main {
   .footer__inner-row-contact p {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .club__inner {
+    padding: 70px 0;
+  }
+  .club__inner-row {
+    padding: 25px 20px 28px 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .club__inner-row h3 {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .club__inner-row-bg-image {
+    left: 0;
   }
 }
