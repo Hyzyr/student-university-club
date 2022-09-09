@@ -14,7 +14,7 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+
     }
   }
   &__leaves {
@@ -105,6 +105,12 @@
     &__inner {
       p {
         margin-bottom: 20px;
+      }
+      &-image {
+        img {
+            width: 130%;
+
+        }
       }
     }
   }
@@ -298,7 +304,7 @@
         order: -1;
         margin-bottom: 60px;
         & > img {
-          max-width: 280px;
+          max-width: 230px;
         }
       }
       &__content {
@@ -319,19 +325,15 @@
     }
     &-row {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
-      &:last-child {
-        margin: unset;
-      }
+      margin: 0 -12px;
       &-link {
         width: calc(16.6% - 24px);
+        margin: 12px;
         &-image {
           padding-bottom: 34.5%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           position: relative;
           img {
             position: absolute;
@@ -361,11 +363,10 @@
     &__inner {
       padding: 70px 0;
       &-row {
-        flex-wrap: wrap;
-        margin-bottom: unset;
         &-link {
-          width: calc(33.3% - 40px);
-          margin-bottom: 30px;
+            margin: 20px;
+            width: calc(25% - 40px);
+          
         }
       }
     }
@@ -378,8 +379,7 @@
       padding: 50px 0;
       &-row {
         &-link {
-          width: calc(33.3% - 30px);
-          margin-bottom: 30px;
+          width: calc(33.3% - 40px);
         }
       }
     }
@@ -390,12 +390,6 @@
   .sponsors {
     &__inner {
         padding: 35px 0;
-      &-row {
-        &-link {
-          width: calc(50% - 20px);
-          margin-bottom: 30px;
-        }
-      }
     }
   }
 }

@@ -188,6 +188,11 @@ main {
      object-fit: cover;
 }
 
+.anchor {
+  position: relative;
+  top: -40px;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -265,7 +270,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer__inner-row-social span {
+.footer__inner-row-social a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,10 +284,10 @@ main {
   width: 33px;
   height: 27px;
 }
-.footer__inner-row-social span:last-child {
+.footer__inner-row-social a:last-child {
   margin-right: unset;
 }
-.footer__inner-row-social span svg {
+.footer__inner-row-social a svg {
   max-width: 100%;
   max-height: 100%;
   fill: #909699;
@@ -379,8 +384,6 @@ main {
 .hero__bg img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .hero__leaves {
   display: -webkit-box;
@@ -528,31 +531,22 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
-}
-.sponsors__inner-row:last-child {
-  margin: unset;
+  margin: 0 -12px;
 }
 .sponsors__inner-row-link {
   width: calc(16.6% - 24px);
+  margin: 12px;
 }
 .sponsors__inner-row-link-image {
   padding-bottom: 34.5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
 .sponsors__inner-row-link-image img {
@@ -935,14 +929,9 @@ main {
   .sponsors__inner {
     padding: 70px 0;
   }
-  .sponsors__inner-row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: unset;
-  }
   .sponsors__inner-row-link {
-    width: calc(33.3% - 40px);
-    margin-bottom: 30px;
+    margin: 20px;
+    width: calc(25% - 40px);
   }
 
   .product__inner {
@@ -962,7 +951,7 @@ main {
   .footer__inner-row-main-logo {
     width: 200px;
   }
-  .footer__inner-row-social span {
+  .footer__inner-row-social a {
     width: 26px;
     height: 22px;
     margin-right: 35px;
@@ -1045,7 +1034,7 @@ main {
   .footer__inner-row-contact h6 {
     margin-bottom: 18px;
   }
-  .footer__inner-row-social span {
+  .footer__inner-row-social a {
     margin-right: 25px;
   }
 
@@ -1153,7 +1142,7 @@ main {
   .footer__inner-row-contact h6 {
     margin-bottom: 14px;
   }
-  .footer__inner-row-social span {
+  .footer__inner-row-social a {
     width: 22px;
     height: 18px;
     margin-right: 20px;
@@ -1206,6 +1195,9 @@ main {
   .hero__inner p {
     margin-bottom: 20px;
   }
+  .hero__inner-image img {
+    width: 130%;
+  }
 
   .intro {
     padding: 40px 0;
@@ -1231,7 +1223,7 @@ main {
     margin-bottom: 60px;
   }
   .introItem__image > img {
-    max-width: 280px;
+    max-width: 230px;
   }
   .introItem__content {
     width: 100%;
@@ -1242,8 +1234,7 @@ main {
     padding: 50px 0;
   }
   .sponsors__inner-row-link {
-    width: calc(33.3% - 30px);
-    margin-bottom: 30px;
+    width: calc(33.3% - 40px);
   }
 
   .footer__inner {
@@ -1268,7 +1259,7 @@ main {
     font-size: 12px;
     line-height: 20px;
   }
-  .footer__inner-row-social span {
+  .footer__inner-row-social a {
     width: 18px;
     height: 15px;
     margin-right: 16px;
@@ -1302,6 +1293,11 @@ main {
   }
 }
 @media (max-width: 440px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
   .nav__inner-links a {
     margin-right: 30px;
   }
@@ -1318,10 +1314,6 @@ main {
 
   .sponsors__inner {
     padding: 35px 0;
-  }
-  .sponsors__inner-row-link {
-    width: calc(50% - 20px);
-    margin-bottom: 30px;
   }
 
   .footer__inner-row {

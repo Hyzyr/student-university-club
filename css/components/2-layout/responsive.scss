@@ -284,7 +284,10 @@
 }
 // 440px
 @include xxsm-xsm  {
-
+    h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
     @include nav-xxsm-xsm;
     @include header-xxsm-xsm;
     @include sponsors-xxsm-xsm;

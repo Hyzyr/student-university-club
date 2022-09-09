@@ -27,7 +27,7 @@
       &-social {
         display: flex;
         align-items: center;
-        span {
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -106,7 +106,7 @@
           }
         }
         &-social {
-          span {
+          a {
             width: 26px;
             height: 22px;
             margin-right: 35px;
@@ -143,7 +143,7 @@
           }
         }
         &-social {
-          span {
+          a {
             margin-right: 25px;
           }
         }
@@ -176,7 +176,7 @@
           }
         }
         &-social {
-          span {
+          a {
             width: 22px;
             height: 18px;
             margin-right: 20px;
@@ -212,7 +212,7 @@
           }
         }
         &-social {
-          span {
+          a {
             width: 18px;
             height: 15px;
             margin-right: 16px;
