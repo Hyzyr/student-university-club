@@ -1,0 +1,69 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    // @include intro-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+ 
+    // @include intro-xxxlg-xxxxlg;
+
+}
+// 1250px
+@include xlg-xxlg-extra {
+
+    // @include intro-xlg-xxlg-extra;
+
+}
+// 1180px
+@include xlg-xxlg {
+
+    // @include intro-xlg-xxlg;
+
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+ 
+    // @include hero-lg-xlg;
+
+
+}
+// 930px
+@include md-lg {
+
+    // @include intro-md-lg;
+
+
+}
+// 750px
+@include sm-md {
+
+    // @include hero-sm-md;
+
+
+}
+// 650px
+@include sm-md-extra {
+    // @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm  {
+
+    // @include header-xsm-sm;
+
+
+}
+// 440px
+@include xxsm-xsm  {
+
+    // @include info-xxsm-xsm;
+
+}
+// 390px
+@include xxxsm-xxsm  {
+    // @include intro-xxxsm-xxsm;
+}
+

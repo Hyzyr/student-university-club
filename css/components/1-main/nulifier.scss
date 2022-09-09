@@ -1,0 +1,78 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+button {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(50, 50, 52);
+  ;
+  
+  ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($color: #AE29FF, $alpha: 0.7);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color: #AE29FF, $alpha: 0.5);
+}
+/*** 
+====================================================================
+Global Settings
+====================================================================
+   ***/
+body {
+  font-family: $inter;
+  font-size: 21px;
+  color: $white;
+  line-height: 40px;
+  font-weight: 400;
+  background: $black;
+}
+a {
+  text-decoration: none;
+  opacity: 1;
+  color: $white;
+  transition: .3s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: .88;
+  }
+}
+.auto__container {
+  position: relative;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
