@@ -1,5 +1,24 @@
 .header {
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 190px;
+            img {
+                width: 100%;
+            }
+        }
+    }
  
 }
 // 1024px
